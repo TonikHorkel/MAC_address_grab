@@ -1,4 +1,4 @@
-#include <windows.h>
+﻿#include <windows.h>
 #include <iphlpapi.h>
 #pragma comment(lib, "iphlpapi.lib")
 #include <fileapi.h>

@@ -1,0 +1,7 @@
+﻿cmake_minimum_required (VERSION 3.8)
+project ("MAC_address_grab")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} /SUBSYSTEM:WINDOWS /ENTRY:mainCRTStartup")
+add_executable (MAC_address_grab "MAC_address_grab.cpp")
+if (CMAKE_VERSION VERSION_GREATER 3.12)
+  set_property(TARGET MAC_address_grab PROPERTY CXX_STANDARD 20)
+endif()
