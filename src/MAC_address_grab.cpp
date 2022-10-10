@@ -7,7 +7,7 @@
 #define IP_adapter_info_buffer_max_length 16
 #define output_buffer_max_length (IP_adapter_info_buffer_max_length * 132 + IP_adapter_info_buffer_max_length * 19)
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) { // Počet argumentů (argc) není zkontrolovaný.
 	IP_ADAPTER_INFO IP_adapter_info_buffer[IP_adapter_info_buffer_max_length];
 	PIP_ADAPTER_INFO IP_adapter_info_buffer_pointer;
 	DWORD IP_adapter_info_buffer_size = sizeof(IP_adapter_info_buffer);
